@@ -24,12 +24,3 @@ jobs:
       with:
         name: build-results
         path: D:\a\unreal-shimloader\unreal-shimloader
-
-  deploy:
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/download-artifact@v5
-      with:
-        name: build-results
-    - name: Display structure of downloaded files
-      run: ls -R
